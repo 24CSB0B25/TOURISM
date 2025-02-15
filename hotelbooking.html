@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indore City Tourism</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url("https://th.bing.com/th/id/OIP.p61b8Z0ECWwrb75Wx3d8ZQHaD9?rs=1&pid=ImgDetMain");
+            background-size: 100;
+            background-attachment: fixed;
+            color: #fff;
+        }
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            animation: fadeIn 3s ease-in-out;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: rgba(255, 255, 255, 0.2);
+        }
+        .container {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            margin: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .heritage-list img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: auto;
+        }
+        form input, form textarea, form button {
+            margin-bottom: 10px;
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+        }
+        form button {
+            background: #28a745;
+            color: #fff;
+            cursor: pointer;
+        }
+        form button:hover {
+            background: #218838;
+        }
+        .gallery img {
+            max-width: 200px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 3s ease-in-out;
+        }
+        footer:hover {
+            animation: bounce 2s infinite;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0); 
+            }
+            40% {
+                transform: translateY(-10px); 
+            }
+            60% {
+                transform: translateY(-5px); 
+            }
+        }
+        .icon {
+            font-size: 40px; /* Adjust size as needed */
+            color: #4267B2; /* Facebook blue */
+            margin: 10px;
+        }
+        .instagram {
+            color: #E4405F; /* Instagram pink */
+        }
+
+    </style>
+</head>
+<body>
+     
+    <header>
+        <h1>HOTEL BOOKING</h1>
+        <h2>Get the booking in the hotels nearest to the visiting spots and with best services at minimum price .</h2>
+    </header> 
+
+    <div class="container">
+        <h2>Fill the following details for instantaneous booking : </h2>
+        <form action="/submit-booking" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+              
+            <label for="Mobile NO.">Mobile NO. :</label>
+            <input type="text" id="mobileno." name="mobileno." required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Check-In Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-Out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="guests">Number of Guests:</label>
+            <input type="number" id="guests" name="guests" required>
+ 
+            <h3>( Click on book now to see the rooms and their capacity , available . )</h3>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+    <h3>contact - +91 92233 67890</h3>
+    <p>&copy; 2025 Indore City Tourism. All rights reserved.</p>
+</body>
+</html>
+
+
